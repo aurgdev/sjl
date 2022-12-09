@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styling file -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SJL</title>
+  </head>
+
+  <body class="w-screen">
+    <header class="container mx-auto">
+      <nav class="h-[190px] flex flex-row justify-between items-center">
+        <a href="#"><img class="h-24" src="../assets/logo.png" alt="logo" /></a>
+        <ul class="inline-flex space-x-14 font-medium">
+          <li class="text-primary flex flex-col items-center">
+            <a href="#"> A propos</a>
+            <div class="h-1.5 w-1.5 bg-primary rounded-full"></div>
+          </li>
+          <li class="hover:text-primary"><a href="#"> Transport</a></li>
+          <li class="hover:text-primary"><a href="#"> Logistique</a></li>
+          <li class="hover:text-primary"><a href="#"> Transit & douanes</a></li>
+          <li class="hover:text-primary"><a href="#"> Carrieres</a></li>
+          <li class="hover:text-primary"><a href="#"> News room</a></li>
+        </ul>
+        <div class="space-x-8 inline-flex">
+          <div class="h-7 inline-flex space-x-2">
+            <img " src=" ../assets/france.svg" alt="france">
+            <img src="../assets/spain.svg" alt="spain" />
+          </div>
+          <div class="inline-flex items-center space-x-2 h-7 text-secendary">
+            <a href="#">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook fa-xl"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container mx-auto relative">
+      <div class="flex items-center flex-col">
+        <img
+          class="rounded-2xl max-h-[678px] w-full"
+          src="../assets/cargo-shipment.jpg"
+          alt="cargo port image"
+        />
+        <div
+          class="inline-flex space-x-3 mt-4 -bottom-7 right-[580px] absolute"
+        >
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black bg-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+          <div class="w-2 h-2 border rounded-full border-black"></div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="inline-flex justify-between items-center text-white bottom-2 absolute w-screen"
+    >
+      <div
+        class="bg-primary w-6/12 rounded-r-lg absolute -bottom-10 py-12 pl-48"
+      >
+        <h1 class="flex flex-row text-4xl font-extrabold pr-6 mb-2">
+          <span class="w-24 h-1 bg-white mt-6 mr-2"></span>
+          <span>
+            TRANSPORT, LOGISTIQUE, TRANSIT ENTRE L'EUROP ET L'AFRIQUE
+          </span>
+        </h1>
+        <p class="opacity-70 ml-16">
+          Partenaire logistique et createur de solution integrees pour optimiser
+          votre supply hcain
+        </p>
+      </div>
+
+      <div>
+        <button
+          class="bg-secendary py-4 px-12 right-56 bottom-4 absolute rounded-lg hover:bg-white hover:text-secendary hover:border-2 hover:border-secendary"
+        >
+          Demander un devis
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
