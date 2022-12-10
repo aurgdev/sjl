@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- icons link from font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -24,22 +24,24 @@
     <title>SJL</title>
   </head>
 
-  <body class="w-screen">
+  <body>
     <header class="container mx-auto">
-      <nav class="h-[190px] flex flex-row justify-between items-center">
+      <nav class="h-32 md:h-40 lg:h-48 xl:h-[200px] flex flex-row justify-between items-center">
         <a href="#"><img class="h-24" src="../assets/logo.png" alt="logo" /></a>
-        <ul class="inline-flex space-x-14 font-medium">
+        <ul class="hidden lg:inline-flex space-x-5 xl:space-x-14 font-medium text-[17px]">
           <li class="text-primary flex flex-col items-center">
             <a href="#"> A propos</a>
             <div class="h-1.5 w-1.5 bg-primary rounded-full"></div>
           </li>
-          <li class="hover:text-primary"><a href="#"> Transport</a></li>
+          <li class="hover:text-primary">
+            <a href="#"> Transport</a>
+          </li>
           <li class="hover:text-primary"><a href="#"> Logistique</a></li>
           <li class="hover:text-primary"><a href="#"> Transit & douanes</a></li>
           <li class="hover:text-primary"><a href="#"> Carrieres</a></li>
           <li class="hover:text-primary"><a href="#"> News room</a></li>
         </ul>
-        <div class="space-x-8 inline-flex">
+        <div class="space-x-8 hidden lg:inline-flex ">
           <div class="h-7 inline-flex space-x-2">
             <img " src=" ../assets/france.svg" alt="france">
             <img src="../assets/spain.svg" alt="spain" />
@@ -56,18 +58,22 @@
             </a>
           </div>
         </div>
+        <!-- menu icon for mobile -->
+        <div class=" block lg:hidden mr-2">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
       </nav>
     </header>
-    <section class="container mx-auto relative">
-      <div class="flex items-center flex-col">
+    <section class="container mx-auto">
+      <div class="flex items-center flex-col relative text-white">
+        <!-- hero image -->
         <img
-          class="rounded-2xl max-h-[678px] w-full"
+          class="sm:rounded-2xl max-h-72 sm:max-h-[678px] w-full"
           src="../assets/cargo-shipment.jpg"
           alt="cargo port image"
         />
-        <div
-          class="inline-flex space-x-3 mt-4 -bottom-7 right-[580px] absolute"
-        >
+        <!-- dots without functionality -->
+        <div class="inline-flex space-x-3 mt-4 pl-0 ml-0 lg:pl-8 xl:pl-0 lg:ml-96 z-20">
           <div class="w-2 h-2 border rounded-full border-black"></div>
           <div class="w-2 h-2 border rounded-full border-black"></div>
           <div class="w-2 h-2 border rounded-full border-black"></div>
@@ -76,33 +82,27 @@
           <div class="w-2 h-2 border rounded-full border-black"></div>
           <div class="w-2 h-2 border rounded-full border-black"></div>
         </div>
+        <div
+          class="flex flex-row py-6 xl:py-10 sm:pl-48 sm:pr-20 mt-2 bg-primary sm:absolute -bottom-14 -left-48 rounded-lg sm:rounded-r-lg max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-5xl"
+        >
+        <div class="w-20 h-1 mt-5 mr-2 bg-white"></div>
+        <div>
+          <h1 class="text-lg lg:text-2xl xl:text-4xl font-extrabold">
+            TRANSPORT, LOGISTIQUE, TRANSIT ENTRE L'EUROP ET L'AFRIQUE
+          </h1>
+          <p class="opacity-70 ">
+            Partenaire logistique et createur de solution integrees pour
+            optimiser votre supply hcain
+          </p>
+        </div>
+        </div>
+        <button
+        class="bg-secendary py-3 xl:py-4 px-10 mt-2 xl:px-12 right-0 md:right-6 -bottom-12 sm:bottom-0 sm:absolute rounded-lg hover:bg-white hover:text-secendary hover:border-2 hover:border-secendary"
+      >
+        Demander un devis
+      </button>
       </div>
     </section>
-    <div
-      class="inline-flex justify-between items-center text-white bottom-2 absolute w-screen"
-    >
-      <div
-        class="bg-primary w-6/12 rounded-r-lg absolute -bottom-10 py-12 pl-48"
-      >
-        <h1 class="flex flex-row text-4xl font-extrabold pr-6 mb-2">
-          <span class="w-24 h-1 bg-white mt-6 mr-2"></span>
-          <span>
-            TRANSPORT, LOGISTIQUE, TRANSIT ENTRE L'EUROP ET L'AFRIQUE
-          </span>
-        </h1>
-        <p class="opacity-70 ml-16">
-          Partenaire logistique et createur de solution integrees pour optimiser
-          votre supply hcain
-        </p>
-      </div>
-
-      <div>
-        <button
-          class="bg-secendary py-4 px-12 right-56 bottom-4 absolute rounded-lg hover:bg-white hover:text-secendary hover:border-2 hover:border-secendary"
-        >
-          Demander un devis
-        </button>
-      </div>
     </div>
   </body>
 </html>
